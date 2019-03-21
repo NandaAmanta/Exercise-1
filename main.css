@@ -1,0 +1,103 @@
+.poto-saya{
+    width:240px;
+    height: 250px;
+    border-radius:50%;
+    display: block;
+    margin:0 auto;
+    border:3px solid white;
+    box-shadow: 0px 0px 0px 2px black;
+
+}
+body{
+    background-image: url(./background.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover; 
+    padding:20px;
+    background-attachment: fixed;
+}
+.garis{
+    height: 3px;
+    background-color: white;
+    box-shadow: 0px 0px 0px 1px black;
+
+    margin:0 auto;
+    animation-name: garis;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    margin-bottom: 20px;
+
+}
+.row:nth-child(4) .col-sm,.row:nth-child(5) .col-sm{
+    padding:5px;
+    background-color:rgba(0, 193, 252, 0.7) ;
+    opacity: 0;
+    margin:5px;
+    border:1px solid black;
+}
+.row:nth-child(4) .col-sm:nth-child(1){
+    animation-name: opacity;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.row:nth-child(4) .col-sm:nth-child(2){
+    animation-name: opacity;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s
+}
+.row:nth-child(4) .col-sm:nth-child(3){
+    animation-name: opacity;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+.row:nth-child(4) .col-sm:hover,.row:nth-child(5) .col-sm:hover{
+    background-color: aqua
+}
+.row:nth-child(5) .col-sm{
+    animation-name: opacity;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+.sosial-media{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+}
+h2{
+    text-align: center;
+}
+h3,h2{
+    color:white;
+    text-shadow: 0px 0px 3px black;
+
+}
+@keyframes garis{
+    from{
+        width:0;
+        
+    }
+    to{
+        width:100%;
+    }
+}
+@keyframes opacity{
+    from{
+        opacity: 0;
+        transform: rotateX(-55deg); 
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0deg); 
+
+    }
+}
